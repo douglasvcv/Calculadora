@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculator">
+        <header>
+            <input type="number" name="number1" id="n1" placeholder="Enter a number">
+            <input type="text" name="operator" id="op" value=" " disabled>
+            <input type="number" name="number2" id="n2" placeholder="Enter a number">
+        </header>
+        <main>
+            <button name="+" id="opr" value="+" onclick="calculate(this)">+</button>
+            <button name="-" id="opr" value="-" onclick="calculate(this)">-</button>
+            <button name="x" id="opr" value="*" onclick="calculate(this)">x</button>
+            <button name="/" id="opr" value="/" onclick="calculate(this)">/</button> 
+        </main>
+    
+        <input type="text" id="result" disabled placeholder="Result">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
